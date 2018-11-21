@@ -13,6 +13,15 @@ body{
   height: 65vh;
   width: 65vh;
 }
+@media only screen and (max-width: 968px) {
+  .bglogo{
+    position: absolute;
+    top:20%;
+    right: 2vh;
+    height: 30vh;
+    width: 30vh;
+  }
+}
 
 path {
   fill: #252627;
