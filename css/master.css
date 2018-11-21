@@ -13,19 +13,22 @@ body{
   height: 65vh;
   width: 65vh;
 }
-@media only screen and (max-width: 968px) {
-  .bglogo{
-    position: absolute;
-    top:20%;
-    right: 2vh;
-    height: 30vh;
-    width: 30vh;
-  }
+@media only screen and (max-width: 1268px) {
+    /* For mobile phones: */
+    .bglogo{
+      width: 50vh;
+      height: 50vh;
+
+      position:absolute; /*it can be fixed too*/
+      left:0; right:0;
+      top:0; bottom:0;
+      margin:auto;
+    }
 }
 
 path {
   fill: #252627;
-  stroke: #000;
+  stroke: #00ffdc;
   animation: my_animation 2s linear forwards, filling .2s linear 2s forwards;
   stroke-dasharray: 400; /* need to ... */
   stroke-dashoffset: 400; /* ... match */
@@ -36,5 +39,5 @@ path {
 }
 
 @keyframes filling {
-  to {fill: #000}
+  to {fill: #ff0046}
 }
