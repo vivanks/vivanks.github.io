@@ -1,9 +1,12 @@
-@media only screen and (max-width: 768px) {
-  .bglogo{
-    position: absolute;
-    top:20%;
-    right: 2vh;
-    height: 30vh;
-    width: 30vh;
-  }
+@media only screen and (max-width: 1268px) {
+    /* For mobile phones: */
+    .bglogo{
+      width: 50vh;
+      height: 50vh;
+
+      position:absolute; /*it can be fixed too*/
+      left:0; right:0;
+      top:0; bottom:0;
+      margin:auto;
+    }
 }
