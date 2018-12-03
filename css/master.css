@@ -65,10 +65,12 @@ p {
   font-size: 48px;
 }
 
+
 .word {
   position: absolute;
-  width: 220px;
+  width: 100%;
   opacity: 0;
+  white-space: nowrap;
 }
 
 .letter {
