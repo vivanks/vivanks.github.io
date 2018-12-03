@@ -11,11 +11,13 @@
     }
 
     p {
+      z-index: 999;
       display: inline-block;
       vertical-align: top;
+      width: 100%;
       margin: 0;
       color: white;
-      font-size: 128px;
+      font-size: 90px;
     }
 
 }
