@@ -54,7 +54,7 @@ changeWord();
 setInterval(changeWord, 4000);
 
 var i = 0;
-var txt = 'Hi';
+var txt = 'Hi , ';
 var speed = 100;
 
 function typeWriter() {
@@ -68,7 +68,7 @@ function typeWriter() {
 typeWriter()
 
 var j = 0;
-var txt1 = 'I am Vivank Sharma';
+var txt1 = 'I am Vivank Sharma a,';
 var speed = 100;
 
 function typeWriter1() {
@@ -80,3 +80,17 @@ function typeWriter1() {
 }
 
 typeWriter1()
+
+var k = 0;
+var txt2 = 'Developer';
+var speed = 100;
+
+function typeWriter2() {
+  if (k < txt2.length) {
+    document.getElementById("demo2").innerHTML += txt2.charAt(k);
+    k++;
+    setTimeout(typeWriter2, speed);
+  }
+}
+
+typeWriter2()
