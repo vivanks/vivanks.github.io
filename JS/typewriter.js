@@ -52,3 +52,31 @@ function splitLetters(word) {
 
 changeWord();
 setInterval(changeWord, 4000);
+
+var i = 0;
+var txt = 'Hi';
+var speed = 100;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+typeWriter()
+
+var j = 0;
+var txt1 = 'I am Vivank Sharma';
+var speed = 100;
+
+function typeWriter1() {
+  if (j < txt1.length) {
+    document.getElementById("demo1").innerHTML += txt1.charAt(j);
+    j++;
+    setTimeout(typeWriter1, speed);
+  }
+}
+
+typeWriter1()
