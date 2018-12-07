@@ -37,12 +37,16 @@ function animateLetterIn(nw, i) {
 
 function splitLetters(word) {
   var content = word.innerHTML;
-  word.innerHTML = '';
+  word.innerHTML ='';
   var letters = [];
   for (var i = 0; i < content.length; i++) {
     var letter = document.createElement('span');
     letter.className = 'letter';
-    letter.innerHTML = content.charAt(i);
+    var char = content.charAt(i);
+    if(char === " ")
+        letter = document.createElement('br');
+    else
+        letter.innerHTML = char;
     word.appendChild(letter);
     letters.push(letter);
   }
@@ -68,7 +72,7 @@ function typeWriter() {
 typeWriter()
 
 var j = 0;
-var txt1 = 'I am Vivank Sharma a,';
+var txt1 = 'I\'m Vivank a ,';
 var speed = 100;
 
 function typeWriter1() {
@@ -80,17 +84,3 @@ function typeWriter1() {
 }
 
 typeWriter1()
-
-var k = 0;
-var txt2 = 'Developer';
-var speed = 100;
-
-function typeWriter2() {
-  if (k < txt2.length) {
-    document.getElementById("demo2").innerHTML += txt2.charAt(k);
-    k++;
-    setTimeout(typeWriter2, speed);
-  }
-}
-
-typeWriter2()
