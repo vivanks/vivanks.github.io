@@ -72,7 +72,7 @@ function typeWriter() {
 typeWriter()
 
 var j = 0;
-var txt1 = 'I\'m Vivank a ,';
+var txt1 = 'I\'m Vivank ,';
 var speed = 100;
 
 function typeWriter1() {
