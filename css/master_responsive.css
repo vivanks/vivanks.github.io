@@ -1,4 +1,8 @@
 @media only screen and (max-width: 1268px) {
+
+    body{
+      overflow: scroll;
+    }
     /* For mobile phones: */
     .bglogo{
       width: 50vh;
@@ -9,7 +13,10 @@
       top:0; bottom:0;
       margin:auto;
     }
+    .bglogo{
 
+      z-index: 0;
+    }
     p {
       z-index: 999;
       display: inline-block;

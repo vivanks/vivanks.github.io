@@ -22,10 +22,24 @@ body{
   right: 15vh;
   height: 65vh;
   width: 65vh;
-  z-index: 0;
+  z-index: 99;
 }
 
 
+.home-page{
+  width: 100%;
+  will-change: contents;
+  height: 90%;
+  min-height: 566px;
+  position: absolute;
+  opacity: 1;
+  top: 5%;
+  margin: 0 auto;
+  z-index: 0;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
 path {
   fill: #252627;
   stroke: #00ffdc;
@@ -44,6 +58,11 @@ path {
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
 
+.bglogo path:hover{
+  stroke: #fff;
+}
+
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
@@ -53,7 +72,7 @@ body {
 .text {
   position: absolute;
   left: 10%;
-  top: 50%;
+  top: 40%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -139,3 +158,166 @@ p:hover {
       -1px 1px 0 var(--mainColor),
       1px 1px 0 var(--mainColor);
   }
+
+}
+.top-tags{
+  bottom: auto;
+  top: 0px;
+}
+
+.tags{
+      color: #515152;
+      position: absolute;
+      bottom: 0px;
+      left: 80px;
+      font-size: 18px;
+      font-family: 'La Belle Aurore', cursive;
+    }
+
+.home-page #demo::before{
+  content: '<h1>';
+  font-family: 'La Belle Aurore', cursive;
+  color: #515152;
+  font-size: 18px;
+  position: absolute;
+  margin-top: -35px;
+}
+
+.home-page .word::after{
+  content: '</h1>';
+  font-family: 'La Belle Aurore', cursive;
+  color: #515152;
+  font-size: 18px;
+  position: absolute;
+  margin-top: 18px;
+  margin-left: 20px;
+  -webkit-animation: myanim2 1s 1.7s backwards;
+  animation: myanim2 1s 1.7s backwards;
+}
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+  }
+
+  @keyframes myanim2 {
+    0%   { opacity: 0;}
+    100% {opacity: 1;}
+
+}
+@-webkit-keyframes myanim2 {
+    0%   { opacity: 0;  }
+    100% {opacity: 1;}
+
+}
+
+#nav-bar{
+  background: #181818;
+  width: 60px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  min-height: 500px;
+}
+#nav-bar nav{
+  display: block;
+text-align: center;
+position: absolute;
+height: 210px;
+top: 50%;
+margin-top: -120px;
+width: 100%;
+}
+
+#nav-bar nav a{
+  font-size: 20px;
+    color: #4d4d4e;
+    display: block;
+    line-height: 51px;
+    height: 51px;
+    position: relative;
+    text-decoration: none;
+}
+
+.logo{
+  background: #070707;
+  display: block;
+  padding: 8px 0;
+}
+
+.logo img{
+  display: block;
+  margin: 8px auto;
+  width: 24px;
+  height: auto;
+}
+
+.home-link{
+  color: #fff;
+  font-size: 24px;
+  display: block;
+}
+
+.home-link b{
+  color: #fff;
+  font-size: 12px;
+  display: none;
+
+}
+.active b{
+  color: #00ffdc;
+}
+
+.active i{
+  color: #00ffdc;
+}
+.home-link:hover{
+  color: #00ffdc
+}
+
+.home-link:hover i{
+  display: none;
+}
+
+nav a:hover b{
+  display: block;
+}
+
+
+
+.home-page .flat-button {
+    color: #08fdd8;
+    font-size: 11px;
+    letter-spacing: 4px;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    padding: 8px 12px;
+    border: 1px solid #08fdd8;
+    margin-top: 120px;
+    float: left;
+    border-radius: 3px;
+    -webkit-animation: myanim2 1s 1.8s backwards;
+    animation: myanim2 1s 1.8s backwards;
+}
+.flat-button {
+    white-space: nowrap
+}
+.blast{
+    display:inline-block;
+}
+.home-page .flat-button:hover {
+    background: #08fdd8;
+    color:#252627;
+}
+
+#mobile-link {
+    display: none;
+}
+#mobile-link:hover {
+    color:#08fdd8
+}
