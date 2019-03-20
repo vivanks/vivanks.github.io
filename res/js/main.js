@@ -1,9 +1,3 @@
-/*
-* Template Name: Sunshine - Responsive vCard Template
-* Author: LMPixels (Linar Miftakhov)
-* Author URL: http://themeforest.net/user/lmpixels
-* Version: 1.0
-*/
 
 (function($) {
 "use strict";
