@@ -74,13 +74,13 @@ body.body-no-scroll-fixed {
 
 ::-moz-selection {
     background: transparent;
-    color: #373BFF;
+    color: #7ee8fa;
     text-shadow: none;
 }
 
 ::selection {
     background: transparent;
-    color: #373BFF;
+    color: #7ee8fa;
     text-shadow: none;
 }
 
@@ -325,7 +325,7 @@ li {
     top: 0;
     left: 0;
     z-index: 9999;
-    outline: 15px solid #373BFF;
+    outline: 15px solid #7ee8fa;
     outline-offset: -15px;
     transition: 1s;
     -webkit-transition: 1s;
@@ -360,7 +360,7 @@ li {
 .preloader-dots>div {
     width: 18px;
     height: 18px;
-    border: 5px solid #373BFF;
+    border: 5px solid #80ff72;
     border-radius: 100%;
     display: block;
     -webkit-animation: dotsDelay 1.0s infinite ease-in-out both;
@@ -571,7 +571,8 @@ header.header-no-scroll-fixed {
 }
 
 .menu-close:hover {
-    background-color: #0DD461;
+    background-color: #80ff72;
+    background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
 }
 
 /* nav */
@@ -596,7 +597,7 @@ nav .submenu {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #373BFF;
+    background-color: #7ee8fa;
     z-index: 200;
     overflow: auto;
     transform: translateY(-100%);
@@ -713,9 +714,10 @@ nav .submenu {
 
 .page-links a.active,
 .page-links a:hover {
-    color: #0DD461;
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
+    background: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
 @media only screen and (max-height: 475px) {
@@ -822,7 +824,8 @@ nav .submenu {
 	width: 100%;
 	bottom: 15px;
 	left: 0;
-	background-color: #0DD461;
+	background-color: #7ee8fa;
+    background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
 	z-index: -1;
 }
 
@@ -894,7 +897,7 @@ nav .submenu {
 }
 
 .service-item:hover {
-    background-color: #373BFF;
+    
     transition-delay: 1s;
     -webkit-transition-delay: 1s;
     -moz-transition-delay: 1s;
@@ -916,7 +919,8 @@ nav .submenu {
     right: -1px;
     height: 1px;
     width: 0;
-    background-color: #373BFF;
+    background-color: #7ee8fa;
+    background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
     transition: .25s;
     -webkit-transition: .25s;
     -moz-transition: .25s;
@@ -952,7 +956,8 @@ nav .submenu {
     left: -1px;
     height: 1px;
     width: 0;
-    background-color: #373BFF;
+    background-color: #7ee8fa;
+    background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
     transition: .25s;
     -webkit-transition: .25s;
     -moz-transition: .25s;
@@ -990,7 +995,10 @@ nav .submenu {
     line-height: 1;
     margin-bottom: 20px;
     display: inline-block;
-    color: #373BFF;
+    background: -webkit-linear-gradient(#7ee8fa, #80ff72);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
     transition: .2s;
     -webkit-transition: .2s;
     -moz-transition: .2s;
@@ -998,14 +1006,7 @@ nav .submenu {
     -o-transition: .2s;
 }
 
-.service-item:hover span {
-    color: #fff;
-    transition-delay: 1s;
-    -webkit-transition-delay: 1s;
-    -moz-transition-delay: 1s;
-    -ms-transition-delay: 1s;
-    -o-transition-delay: 1s;
-}
+
 
 .service-item h4 {
 	font-size: 22px;
@@ -1019,14 +1020,6 @@ nav .submenu {
 	font-weight: 600;
 }
 
-.service-item:hover h4 {
-    color: #fff;
-    transition-delay: 1s;
-    -webkit-transition-delay: 1s;
-    -moz-transition-delay: 1s;
-    -ms-transition-delay: 1s;
-    -o-transition-delay: 1s;
-}
 
 .service-item p {
 	color: #777;
@@ -1039,14 +1032,7 @@ nav .submenu {
     -o-transition: .2s;
 }
 
-.service-item:hover p {
-	color: #eee;
-    transition-delay: 1s;
-    -webkit-transition-delay: 1s;
-    -moz-transition-delay: 1s;
-    -ms-transition-delay: 1s;
-    -o-transition-delay: 1s;
-}
+
 
 /* ==========================================================================
    end of service-wrapper
@@ -1096,7 +1082,7 @@ nav .submenu {
     content: "";
     height: 1px;
     width: 30px;
-    background-color: #373BFF;
+    background-color: #7ee8fa;
     left: 0;
     bottom: 50%;
     transition: .3s;
@@ -1141,7 +1127,9 @@ nav .submenu {
     content: attr(data-text);
     top: 0;
     left: 0;
-    color: #373bff;
+    background: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     width: 100%;
     height: 0;
     overflow: hidden;
@@ -1243,7 +1231,7 @@ nav .submenu {
 	content: "";
 	height: 20px;
 	width: 100%;
-	background-color: #0DD461;
+	background-color: #80ff72;
 	left: -100%;
 	top: 5px;
 }
@@ -1291,7 +1279,9 @@ nav .submenu {
 }
 
 .promotion-wrapper h4 span {
-	color: #0DD461;
+	background: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-decoration: underline;
 }
 
@@ -1404,7 +1394,7 @@ nav .submenu {
 	top: 50%;
 	left: 50%;
 	text-align: center;
-	background-color: #0DD461;
+	background-color: #80ff72;
 	color: #fff;
 	cursor: pointer;
 	transform: translate(-50%, -50%);
@@ -1475,7 +1465,8 @@ nav .submenu {
 .skill-slide {
 	display: block;
 	height: 10px;
-	background-color: #373BFF;
+	background-color: #7ee8fa;
+    background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
 }
 
 .skill-single div > p {
@@ -1484,6 +1475,34 @@ nav .submenu {
     font-weight: 500;
     right: 0;
     top: 0;
+}
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+    display: inline-block;
+    position: absolute;
+    width: 2px;
+    height: 100%;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 5rem;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #7ee8fa;
+    left: -0.5rem;
+    width: 20px;
+    height: 20px;
 }
 
 /* ==========================================================================
@@ -1571,7 +1590,8 @@ nav .submenu {
 .owl-dots .owl-dot {
     height: 12px;
     width: 15px;
-    border: 2px solid #373bff !important;
+    border: 2px solid #7ee8fa !important;
+
     transition: .3s;
     -webkit-transition: .3s;
     -moz-transition: .3s;
@@ -1590,11 +1610,11 @@ nav .submenu {
 }
 
 .owl-dots .owl-dot:hover {
-    background-color: #373bff;
+    background-color: #7ee8fa;
 }
 
 .owl-dots .owl-dot.active {
-    background-color: #373bff;
+    background-color: #7ee8fa;
     width: 35px;
 }
 
@@ -1739,7 +1759,7 @@ nav .submenu {
 }
 
 .blog-item a:hover {
-    color: #373BFF;
+    color: #7ee8fa;
 }
 
 .blog-item-info {
@@ -1770,7 +1790,7 @@ nav .submenu {
 }
 
 .blog-item-info span a {
-	color: #373BFF;
+	color: #7ee8fa;
 	font-weight: 500;
 }
 
@@ -1826,7 +1846,7 @@ nav .submenu {
 .paginations li:hover:first-child a,
 .paginations li:hover:last-child a {
     background-color: transparent;
-    color: #373BFF;
+    color: #7ee8fa;
 }
 
 .paginations li a {
@@ -1841,8 +1861,8 @@ nav .submenu {
 
 .paginations li.active,
 .paginations li:hover {
-    background-color: #373BFF;
-    border-color: #373BFF;
+    background-color: #7ee8fa;
+    border-color: #7ee8fa;
     color: #fff;
     display: inline-block;
 }
@@ -1899,7 +1919,7 @@ nav .submenu {
 }
 
 .single-blog-info .blog-by a {
-	color: #373BFF;
+	color: #7ee8fa;
 	font-weight: 600;
 }
 
@@ -2058,7 +2078,7 @@ nav .submenu {
 }
 
 .blog_comments .comment_fild:focus {
-	border: 1px solid #373BFF;;
+	border: 1px solid #7ee8fa;;
 }
 
 .blog-image-slider {
@@ -2068,7 +2088,7 @@ nav .submenu {
 .blog-image-slider .owl-nav button.owl-prev,
 .blog-image-slider .owl-nav button.owl-next {
     font-size: 25px;
-    background-color: #373BFF;
+    background-color: #7ee8fa;
     color: #fff;
     width: 40px;
     height: 40px;
@@ -2187,7 +2207,7 @@ nav .submenu {
 
 .input_group label span {
 	display: inline-block;
-	color: #373BFF;
+	color: #7ee8fa;
 	margin-left: 2px;
 	font-weight: 700;
 }
@@ -2218,7 +2238,7 @@ nav .submenu {
 }
 
 .input_control:focus {
-	border: 1px solid #373BFF;
+	border: 1px solid #7ee8fa;
 }
 
 textarea.input_control {
@@ -2347,7 +2367,7 @@ footer {
 
 .copyright span {
     font-weight: 500;
-    color: #0DD461;
+    color: #80ff72;
 }
 
 .scroll-top {
@@ -2367,7 +2387,7 @@ footer {
 }
 
 .scroll-top:hover {
-	background-color: #0DD461;
+	background-color: #80ff72;
 	color: #fff;
 }
 
