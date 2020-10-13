@@ -1,0 +1,172 @@
+/*==============================================================================
+
+ * Template Name: 
+ * Template URI: 
+ * Author: ixTheme
+ * Description: Responsive HTML5 Template
+ * Version: 1.0
+ * Copyright 2018 ixTheme
+
+==============================================================================*/
+@media (max-width: 1200px) {
+    
+}
+
+@media (max-width: 991px) {
+    .project-short-info h4 {
+        font-size: 30px;
+    }
+    .project-img {
+        min-height: auto;
+    }
+    .about-img {
+        padding: 0 30px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .intro-text {
+        font-size: 27px;
+    }
+    .project-short-info {
+        padding-left: 0;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .right-image .project-short-info {
+        padding-right: 0 !important;
+    }
+    .footer_widget {
+        margin-bottom: 35px;
+    }
+    .about-img {
+        margin-bottom: 50px;
+    }
+    .section-title-alt {
+        margin-bottom: 50px;
+    }
+    .about-wrapper .pl-50 {
+        padding-left: 0 !important;
+    }
+    .social-info {
+        margin-top: 50px;
+    }
+    .contact-wrapper-two .contact__form {
+        margin-top: 50px;
+    }
+    .social a {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .single-blog-title {
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width: 575px) {
+    .scroll-top {
+        bottom: 30px;
+    }
+    .scroll-top.show {
+        right: 15px;
+    }
+    .landing-wrapper::after {
+        width: 280px;
+        height: 280px;
+    }
+    .intro-text .u-line::after {
+        bottom: 13px;
+    }
+    header.header-no-scroll-fixed {
+        width: 100%;
+    }
+    body.body-no-scroll-fixed {
+        padding-right: 0px;
+    }
+    .scroll-top {
+        bottom: 15px;
+    }
+    .scroll-top.show {
+        right: 15px;
+    }
+    .video-popup-wrapper {
+        height: 350px;
+    }
+    .circle-animation::after {
+        left: 40%;
+        top: auto;
+        bottom: -10%;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-links a {
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .intro-text {
+        font-size: 23px;
+    }
+    .intro-text .u-line::after {
+        bottom: 11px;
+        height: 3px;
+    }
+    .menu-close {
+        height: 40px;
+        width: 40px;
+        line-height: 44px;
+        font-size: 30px;
+    }
+    .service-item span {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+    .promotion-wrapper h4 {
+        font-size: 28px;
+    }
+    .video-popup h4 {
+        font-size: 25px;
+    }
+    .paginations li:first-child,
+    .paginations li:last-child {
+        display: block;
+        border: 1px solid #191a1b;
+    }
+    .paginations li:first-child:hover,
+    .paginations li:last-child:hover {
+        background-color: #373BFF;
+        border-color: #373BFF;
+    }
+    .paginations li:first-child:hover a,
+    .paginations li:last-child:hover a {
+        color: #fff !important;
+    }
+    .paginations li:first-child {
+        margin-bottom: 20px;
+    }
+    .paginations li:last-child {
+        margin-top: 20px;
+    }
+    .client-item .img-box p {
+        font-size: 16px;
+    }
+    .breadcrumb-wrapper {
+        padding: 80px 0;
+        padding-top: 130px;
+    }
+    .single-project-title {
+        font-size: 24px;
+    }
+    .filter-projects .img-box p {
+        font-size: 22px;
+    }
+}
+@media (max-width: 350px) {
+    .team-wrapper .col-md-4.col-sm-4.col-6 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,633 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Kuba - Minimal Portfolio Template">
+    <meta name="keywords" content="Portfolio, Personal, Creatiev, Html Template, Portfolio Template">
+    <meta name="author" content="ixTheme">
+	<!--  title  -->
+    <title>Vivank Sharma</title>
+    
+	<!--  favicon  -->
+    <link href="{% static "img/logo-dark.png" %}" type="image/png" rel="icon">
+	<!--  main css  -->
+    <link href="{% static "css/main.css" %}" rel="stylesheet" type="text/css">
+	<!--  responsive css  -->
+    <link href="{% static "css/responsive.css" %}" rel="stylesheet" type="text/css">
+    <!--  Fontawesome css  -->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body id="top">
+    
+    <!--  begin of preloader  -->
+    <div class="preloader">
+        <div class="preloader-dots">
+            <div class="dot1"></div>
+            <div class="dot2"></div>
+            <div class="dot3"></div>
+
+        </div>
+    </div>
+    <!--  end of preloader  -->
+    <!--  begin of page-overlay  -->
+    <div class="page-overlay"></div>
+    <!--  end of page-overlay  -->
+    <!-- begin of main-wrapper -->
+    <div class="main-wrapper">
+        <!-- begin of header -->
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <!-- logo -->
+                        <div class="logo">
+                            <a>
+                                <img class="logo-dark" src="{% static "img/logo-dark.png" %}" alt="nimu">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <!-- menu-btn -->
+                        <div class="menu-btn">
+                            <div class="menu-icon" data-text="menu">
+                                <div class="menu-line menu-line-1"></div>
+                                <div class="menu-line menu-line-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end of header -->
+        <!-- begin of menu -->
+        <nav class="full-screen-menu">
+            <!-- lineAnimationBG -->
+            <div class="lineAnim-bg">
+                <div></div><div></div><div></div><div></div>
+            </div>
+            <!-- menu/page-links -->
+            <div class="menu-panel">
+                <ul class="page-links">
+                    <li><a class="active" href="index-5.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="../../index.html">Blogs</a></li>
+                    <li><a href="../../index.html">Contact</a></li>
+                </ul>
+            </div>
+            <!-- menu close button -->
+            <div class="menu-close">
+                <span class="ion-ios-close-empty"></span>
+            </div>
+        </nav>
+        <!-- end of menu -->
+        <!-- begin of landing-wrapper -->
+        <div class="landing-wrapper">
+            <!-- lineAnimationBG -->
+            <div class="lineAnim-bg no-line">
+                <div></div><div></div><div></div><div></div>
+            </div>
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-10">
+                        <div class="landing-content">
+                            <h2 class="intro-text">Hey <i class="far fa-hand-spock"></i>,</h2>
+                            <h2 class="intro-text">I Am <span class="u-line">Vivank Sharma</span>.<br>An enthusiastic <span class="u-line">Full Stack</span> developer & <span class="u-line">Data Scientist</span>.<br>Who is always Ready to build something awesome</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="landing-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <ul class="social-links">
+                                <li><a href="https://github.com/vivanks"><span class="fab fa-github"></span></a></li>
+                                <li><a href="https://twitter.com/VivankSharma"><span class="ion-social-twitter"></span></a></li>
+                                <li><a href="https://www.linkedin.com/in/vivanks"><span class="ion-social-linkedin"></span></a></li>
+                                <li><a href="https://dev.to/vivank"><i class="fab fa-dev"></i></a></li>
+                                
+                            </ul>
+                            <!-- scroll-down -->
+                            <a href="#services" class="smooth-scroll scroll-down">
+                                <span class="ion-arrow-down-c"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of landing-wrapper -->
+
+        <!-- begin of service-wrapper -->
+        <div id="services" class="section-padding service-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10">
+                        <h2 class="section-title">About me?</h2>
+                        <p class="">I am a full stack developer and data scientist living in Banglore, right in the heart of Silicon Valley of India <img src="https://img.icons8.com/color/48/000000/india.png" style="max-height: 24px" /></p>
+                        <p class="">I mostly work with Django and PyTorch and have experience with Flask, TensorFlow, and others <img src="https://img.icons8.com/dusk/64/000000/mac-dock.png" style="max-height: 24px" /></p>
+                        <p class="">Currently, I am completing my undergrad program from the Vellore Institute of Technology <img src="https://img.icons8.com/dusk/64/000000/university-campus.png" style="max-height: 24px" /></p>
+                        
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="service-item mt-30">
+                            <div class="service-border">
+                                <span class="ion-ios-barcode-outline"></span>
+                                <h4>Web Development</h4>
+                                <p>I like to design frameworks from scratch to accommodate every need of the project.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-item mt-30">
+                            <div class="service-border">
+                                <span class="ion-ios-eye-outline"></span>
+                                <h4>Interactive Design</h4>
+                                <p>I value simple content structure, clean design patterns, and thoughtful interactions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-item mt-30">
+                            <div class="service-border">
+                                <span class="ion-ios-infinite-outline"></span>
+                                <h4>Data Science</h4>
+                                <p>Torchure the data, it'll confess. I find patterns in a big data to extract meaningful insights from it.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of service-wrapper -->
+
+        <!-- begin of skill-slider-wrapper  -->
+        <div class="section-padding skill-slider-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="section-title-alt">
+                            <h4 class="u-line">My</h4>
+                            <br>
+                            <h4 class="u-line">Expertise?</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="skill-single">
+                            <h4>Back End</h4>
+                            <div>
+                                <p>90%</p>
+                                <div class="skill-slide-wrap">
+                                    <span class="skill-slide wow slideInLeft" style="width:90%"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-single mt-20">
+                            <h4>Deep Learning</h4>
+                            <div>
+                                <p>80%</p>
+                                <div class="skill-slide-wrap">
+                                    <span class="skill-slide wow slideInLeft" data-wow-delay=".1s" style="width:80%"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-single mt-20">
+                            <h4>Machine Learning</h4>
+                            <div>
+                                <p>75%</p>
+                                <div class="skill-slide-wrap">
+                                    <span class="skill-slide wow slideInLeft" data-wow-delay=".2s" style="width:75%"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-single mt-20">
+                            <h4>Front End</h4>
+                            <div>
+                                <p>62%</p>
+                                <div class="skill-slide-wrap">
+                                    <span class="skill-slide wow slideInLeft" data-wow-delay=".2s" style="width:62%"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of skill-slider-wrapper -->
+
+        <!-- begin of skill-slider-wrapper  -->
+        <div class="section-padding skill-slider-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="section-title-alt">
+                            <h4 class="u-line">My</h4>
+                            <br>
+                            <h4 class="u-line">Experience?</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        
+						<ul class="timeline">
+							<li>
+								<a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a>
+								<a href="#" class="float-right">21 March, 2014</a>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
+							</li>
+							<li>
+								<a href="#">21 000 Job Seekers</a>
+								<a href="#" class="float-right">4 March, 2014</a>
+								<p>Curabitur purus sem, malesuada eu luctus eget, suscipit sed turpis. Nam pellentesque felis vitae justo accumsan, sed semper nisi sollicitudin...</p>
+							</li>
+							<li>
+								<a href="#">Awesome Employers</a>
+								<a href="#" class="float-right">1 April, 2014</a>
+								<p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
+							</li>
+						</ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of skill-slider-wrapper -->
+
+        <!-- begin of client-image-wrapper  -->
+        <div class="section-padding client-image-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="section-title-alt">
+                            <h4 class="u-line">What I</h4>
+                            <br>
+                            <h4 class="u-line">Use?</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                <div class="img-box client-item">
+                                    <img class="img-fluid" src="{% static "img/clients/dj.png" %}" alt="">
+                                    <p>Django</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                <div class="img-box client-item">
+                                    <img class="img-fluid" src="{% static "img/clients/tf.png" %}" alt="">
+                                    <p>Tensorflow</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                <div class="img-box client-item">
+                                    <img class="img-fluid" src="{% static "img/clients/pt.png" %}" alt="">
+                                    <p>PyTorch</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                <div class="img-box client-item">
+                                    <img class="img-fluid" src="{% static "img/clients/pg.png" %}" alt="">
+                                    <p>PostgreSQL</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                <div class="img-box client-item">
+                                    <img class="img-fluid" src="{% static "img/clients/dk.png" %}" alt="">
+                                    <p>Docker</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                <div class="img-box client-item">
+                                    <img class="img-fluid" src="{% static "img/clients/gc.png" %}" alt="">
+                                    <p>Google Cloud Platform</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                <div class="img-box client-item">
+                                    <img class="img-fluid" src="{% static "img/clients/az.png" %}" alt="">
+                                    <p>Microsoft Azure</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                                <div class="img-box client-item">
+                                    <img class="img-fluid" src="{% static "img/clients/git.png" %}" alt="">
+                                    <p>Github</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of client-image-wrapper -->
+
+        <!-- begin of promotion-wrapper  -->
+        <div class="promotion-wrapper">
+            <!-- lineAnimationBG -->
+            <div class="lineAnim-bg">
+                <div></div><div></div><div></div><div></div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-6 col-md-8">
+                        <h4>Want to <span>know more</span>?</h4>
+                        <a href="#contact" class="Kuba-button">let's talk</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of promotion-wrapper -->
+        <!-- begin of projects-wrapper -->
+        <div class="section-padding projects-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="section-title">Projects</h2>
+                        <p class="mb-80">A developer's portfolio is always incomplete without projects.</p>
+                    </div>
+                </div>
+                <!-- work filter start -->
+               <div class="row">
+                    <div class="col-12">
+                        <div class="filter-buttons mb-50">
+                            <button class="active" data-filter="*">Everything</button>
+                            <button data-filter=".design" class="">Design</button>
+                            <button data-filter=".uiux" class="">Ui/Ux</button>
+                            <button data-filter=".branding" class="">Branding</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- work filter end -->
+                <div class="row filter-projects three-column" style="position: relative; height: 689.062px;">
+                    <div class="col-lg-4 col-md-6 mb-50 uiux" style="position: absolute; left: 0px; top: 0px;">
+                        <a href="project-details.html">
+                            <div class="project-img noise-dark">
+                                <img class="img-fluid" src="{% static "img/project-03.jpg" %}" alt="">
+                            </div>
+                        </a>
+                        <div class="project-short-info mb-0">
+                            <p>Logo Design 2018.</p>
+                            <a href="project-details.html">
+                                <h4 data-text="Men Clapping">Men Clapping</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-50 design" style="position: absolute; left: 366px; top: 0px;">
+                        <a href="project-details.html">
+                            <div class="project-img noise-dark">
+                                <img class="img-fluid" src="{% static "img/project-02.jpg" %}" alt="">
+                            </div>
+                        </a>
+                        <div class="project-short-info mb-0">
+                            <p>Web Design 2018.</p>
+                            <a href="project-details.html">
+                                <h4 data-text="Swimming">Swimming</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-50 design" style="position: absolute; left: 733px; top: 0px;">
+                        <a href="project-details.html">
+                            <div class="project-img noise-dark">
+                                <img class="img-fluid" src="{% static "img/project-01.jpg" %}" alt="">
+                            </div>
+                        </a>
+                        <div class="project-short-info mb-0">
+                            <p>Branding 2018.</p>
+                            <a href="project-details.html">
+                                <h4 data-text="Glance">Glance</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-50 branding" style="position: absolute; left: 0px; top: 344px;">
+                        <a href="project-details.html">
+                            <div class="project-img noise-dark">
+                                <img class="img-fluid" src="{% static "img/project-04.jpg" %}" alt="">
+                            </div>
+                        </a>
+                        <div class="project-short-info mb-0">
+                            <p>Logo Design 2018.</p>
+                            <a href="project-details.html">
+                                <h4 data-text="C-Wall">C-Wall</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-50 uiux" style="position: absolute; left: 366px; top: 344px;">
+                        <a href="project-details.html">
+                            <div class="project-img noise-dark">
+                                <img class="img-fluid" src="{% static "img/project-05.jpg" %}" alt="">
+                            </div>
+                        </a>
+                        <div class="project-short-info mb-0">
+                            <p>Web Design 2018.</p>
+                            <a href="project-details.html">
+                                <h4 data-text="Work Harder">Work Harder</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-50 branding" style="position: absolute; left: 733px; top: 344px;">
+                        <a href="project-details.html">
+                            <div class="project-img noise-dark">
+                                <img class="img-fluid" src="{% static "img/project-06.jpg" %}" alt="">
+                            </div>
+                        </a>
+                        <div class="project-short-info mb-0">
+                            <p>Logo Design 2018.</p>
+                            <a href="project-details.html">
+                                <h4 data-text="Seashell">Seashell</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-20">
+                <div class="container">
+                    <div class="row no-gutters">
+                        <div class="col">
+                            <a  class="Kuba-button button-dark">More Projects Coming Soon</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of projects-wrapper -->
+        
+
+        <div class="section-padding blogs-wrapper pt-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="section-title">Blogs</h2>
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-item mt-30">
+                            <div class="blog-img">
+                                <a href="blog-details-text-post.html">
+                                    <img class="img-fluid" src="img/blog-img/blog-img-01.jpg" alt="">
+                                    <span class="ion-ios-paper-outline"></span>
+                                </a>
+                            </div>
+                            <div class="blog-item-info">
+                                <a href="#0" class="blog-post-date">25 Dec, 2018</a>
+                                <h4><a href="blog-details-text-post.html">Voluptate molestias quod atque nihil in maiores deleniti fugiat!</a></h4>
+                                <span class="mr-5">by <a href="#0">John</a></span>
+                                <span>in <a href="#0">Text Post</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-item mt-30">
+                            <div class="blog-img">
+                                <a href="blog-details-image-post.html">
+                                    <img class="img-fluid" src="img/blog-img/blog-img-02.jpg" alt="">
+                                    <span class="ion-image"></span>
+                                </a>
+                            </div>
+                            <div class="blog-item-info">
+                                <a href="#0" class="blog-post-date">20 Dec, 2018</a>
+                                <h4><a href="blog-details-image-post.html">Nisi expedita sed nemo deleniti officia inventore adipisicing nihil!</a></h4>
+                                <span class="mr-5">by <a href="#0">Jack</a></span>
+                                <span>in <a href="#0">Image Post</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog-item mt-30">
+                            <div class="blog-img">
+                                <a href="blog-details-video-post-(youtube).html">
+                                    <img class="img-fluid" src="img/blog-img/blog-img-03.jpg" alt="">
+                                    <span class="ion-ios-videocam-outline"></span>
+                                </a>
+                            </div>
+                            <div class="blog-item-info">
+                                <a href="#0" class="blog-post-date">22 Dec, 2018</a>
+                                <h4><a href="blog-details-video-post-(youtube).html">Provident blanditiis atque porro quisquam alias ad maxime odio!</a></h4>
+                                <span class="mr-5">by <a href="#0">Nabil</a></span>
+                                <span>in <a href="#0">Video Post(YouTube)</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="text-center mt-20">
+                <div class="container">
+                    <div class="row no-gutters">
+                        <div class="col">
+                            <a href="https://www.dev.to/vivanks" target="_blank"  class="Kuba-button button-dark">Read More!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- begin of contact-wrapper -->
+        <div id="contact" class="section-padding contact-wrapper">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-md-12">
+                        <h2 class="section-title">Contact me!</h2>
+                        <form class="contact__form mt-50" method="post" action="#">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="contact__msg"></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="input_group">
+                                        <textarea name="message" id="message" class="input_control input_required"></textarea>
+                                        <label for="message">Your Message<span>*</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="input_group">
+                                        <input name="name" type="text" id="name" class="input_control input_required">
+                                        <label for="name">Your Name<span>*</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="input_group">
+                                        <input name="email" type="email" id="email" class="input_control input_required">
+                                        <label for="email">Your Email<span>*</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="input_group">
+                                        <input name="subject" type="text" id="subject" class="input_control">
+                                        <label for="subject">Subject</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 text-center">
+                                    <button class="Kuba-button button-dark" name="submit" type="submit">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of contact-wrapper -->
+        <!--  begin of footer  -->
+        <footer class="section-padding text-center">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-12">
+                        <div class="social">
+                            <a href="https://github.com/vivanks">Github</a>
+                            <a href="https://twitter.com/VivankSharma">Twitter</a>
+                            <a href="https://www.linkedin.com/in/vivanks">Linkedin</a>
+                            <a href="https://dev.to/vivank">Dev.to</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters justify-content-center">
+                    <div class="col-md-6">
+                        <div class="footer_widget">
+                            <h5 class="footer_widget_title">Get In Touch</h5>
+                            <span class="line"></span>
+                            <p><a href="mailto:vivanksharma@ymail.com">vivanksharma@ymail.com</a></p>
+                            <p><a href="tel:+919097754801">+91 909 775 4801</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer_widget">
+                            <h5 class="footer_widget_title">Address</h5>
+                            <span class="line"></span>
+                            <p>Vellore Institute of Technology</p>
+                            <p>Vellore, IN</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-12">
+                        <p class="copyright">© 2020 <span>Vivank Sharma</span>. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--  end of footer  -->
+        <!-- begin of scroll-top button -->
+        <a href="#top" class="smooth-scroll scroll-top"><span class="ion-chevron-up"></span></a>
+        <!-- end of scroll-top button -->
+    </div>
+    <!-- end of main-wrapper -->
+    <!-- ========  All JS Here ========  -->
+    <script src="{% static "js/jquery-3.3.1.min.js" %}"></script>
+    <script src="{% static "js/plugins.js" %}"></script>
+    <script src="{% static "js/main.js" %}"></script>
+
+
+</body>
+</html>
