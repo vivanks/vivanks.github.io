@@ -95,7 +95,7 @@
                     <div class="col-md-10">
                         <div class="landing-content">
                             <h2 class="intro-text">Hey <i class="far fa-hand-spock"></i>,</h2>
-                            <h2 class="intro-text">I Am <span class="u-line">Vivank Sharma</span>.<br>An enthusiastic <span class="u-line">Full Stack</span> developer & <span class="u-line">Data Scientist</span>.<br>Who is always Ready to build something awesome</h2>
+                            {{subtitle|safe}}
                         </div>
                     </div>
                 </div>
@@ -105,10 +105,10 @@
                     <div class="row">
                         <div class="col">
                             <ul class="social-links">
-                                <li><a href="https://github.com/vivanks"><span class="fab fa-github"></span></a></li>
-                                <li><a href="https://twitter.com/VivankSharma"><span class="ion-social-twitter"></span></a></li>
-                                <li><a href="https://www.linkedin.com/in/vivanks"><span class="ion-social-linkedin"></span></a></li>
-                                <li><a href="https://dev.to/vivank"><i class="fab fa-dev"></i></a></li>
+                                <li><a href="https://github.com/{{github}}" target="_blank"><span class="fab fa-github"></span></a></li>
+                                <li><a href="https://twitter.com/{{twitter}}" target="_blank"><span class="ion-social-twitter"></span></a></li>
+                                <li><a href="https://www.linkedin.com/in/{{linkedin}}" target="_blank"><span class="ion-social-linkedin"></span></a></li>
+                                <li><a href="https://dev.to/{{dev_to}}" target="_blank"><i class="fab fa-dev"></i></a></li>
                                 
                             </ul>
                             <!-- scroll-down -->
@@ -128,9 +128,7 @@
                 <div class="row">
                     <div class="col-md-10">
                         <h2 class="section-title">About me?</h2>
-                        <p class="">I am a full stack developer and data scientist living in Banglore, right in the heart of Silicon Valley of India <img src="https://img.icons8.com/color/48/000000/india.png" style="max-height: 24px" /></p>
-                        <p class="">I mostly work with Django and PyTorch and have experience with Flask, TensorFlow, and others <img src="https://img.icons8.com/dusk/64/000000/mac-dock.png" style="max-height: 24px" /></p>
-                        <p class="">Currently, I am completing my undergrad program from the Vellore Institute of Technology <img src="https://img.icons8.com/dusk/64/000000/university-campus.png" style="max-height: 24px" /></p>
+                        {{about|safe}}
                         
 
                     </div>
@@ -583,10 +581,10 @@
                 <div class="row no-gutters">
                     <div class="col-12">
                         <div class="social">
-                            <a href="https://github.com/vivanks">Github</a>
-                            <a href="https://twitter.com/VivankSharma">Twitter</a>
-                            <a href="https://www.linkedin.com/in/vivanks">Linkedin</a>
-                            <a href="https://dev.to/vivank">Dev.to</a>
+                            <a href="https://github.com/{{github}}" target="_blank">Github</a>
+                            <a href="https://twitter.com/{{twitter}}" target="_blank">Twitter</a>
+                            <a href="https://www.linkedin.com/in/{{linkedin}}" target="_blank">Linkedin</a>
+                            <a href="https://dev.to/{{dev_to}}" target="_blank">Dev.to</a>
                         </div>
                     </div>
                 </div>
@@ -595,16 +593,15 @@
                         <div class="footer_widget">
                             <h5 class="footer_widget_title">Get In Touch</h5>
                             <span class="line"></span>
-                            <p><a href="mailto:vivanksharma@ymail.com">vivanksharma@ymail.com</a></p>
-                            <p><a href="tel:+919097754801">+91 909 775 4801</a></p>
+                            <p><a href="mailto:{{mail}}">{{mail}}</a></p>
+                            <p><a href="tel:{{contact}}">{{contact}}</a></p>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="footer_widget">
                             <h5 class="footer_widget_title">Address</h5>
                             <span class="line"></span>
-                            <p>Vellore Institute of Technology</p>
-                            <p>Vellore, IN</p>
+                            {{address|safe}}
                         </div>
                     </div>
                     

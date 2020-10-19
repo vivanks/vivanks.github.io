@@ -18,9 +18,9 @@ def index(request):
     context['twitter'] = about[0].twitter
     context['linkedin'] = about[0].linkedin
     context['dev_to'] = about[0].dev_to
-
     
-    return render(request,'index.html',context=context)
+    
+    return render(request,'index.html',context)
 
 
 
