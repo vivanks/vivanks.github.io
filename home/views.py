@@ -7,7 +7,9 @@ from .models import Experience, About
 def index(request):
     context = {}
     about = list(About.objects.all())
-    
+    exp = list(Experience.objects.all())
+    exp.reverse()
+
     context['title'] = about[0].title
     context['subtitle'] = about[0].subtitle
     context['about'] = about[0].about
@@ -18,6 +20,7 @@ def index(request):
     context['twitter'] = about[0].twitter
     context['linkedin'] = about[0].linkedin
     context['dev_to'] = about[0].dev_to
+    context['exp'] = exp
     
     
     return render(request,'index.html',context)

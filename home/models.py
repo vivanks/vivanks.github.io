@@ -5,7 +5,8 @@ from django.db import models
 class Experience(models.Model):
 	title = models.CharField(max_length=100)
 	period = models.CharField(max_length=100)
-	desc = models.CharField(max_length=100)
+	desc = models.TextField()
+	link = models.CharField(max_length=200)
 
 class About(models.Model):
 	title = models.CharField(max_length=1000)
