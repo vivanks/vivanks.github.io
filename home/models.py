@@ -19,3 +19,9 @@ class About(models.Model):
 	twitter = models.CharField(max_length=1000)
 	linkedin = models.CharField(max_length=1000)
 	dev_to = models.CharField(max_length=1000)
+
+class Project(models.Model):
+	title = models.CharField(max_length=100)
+	sub_title = models.CharField(max_length=100)
+	repo_link = models.CharField(max_length=500)
+	image = models.ImageField(upload_to = 'projects')
