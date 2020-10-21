@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Experience, About
+from .models import Experience, About,Project
 
 
 
@@ -9,6 +9,7 @@ def index(request):
     about = list(About.objects.all())
     exp = list(Experience.objects.all())
     exp.reverse()
+    projects = list(Project.objects.all())
 
     context['title'] = about[0].title
     context['subtitle'] = about[0].subtitle
@@ -21,6 +22,7 @@ def index(request):
     context['linkedin'] = about[0].linkedin
     context['dev_to'] = about[0].dev_to
     context['exp'] = exp
+    context['projects'] = projects
     
     
     return render(request,'index.html',context)

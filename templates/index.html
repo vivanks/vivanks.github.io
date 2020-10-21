@@ -355,20 +355,21 @@
                 </div>
                 <!-- work filter end -->
                 <div class="row filter-projects three-column" style="position: relative; height: 689.062px;">
-                    
-                    <div class="col-lg-4 col-md-6 mb-50 wd" style="position: absolute; left: 0px; top: 0px;">
-                        <a href="project-details.html">
+                    {% for i in projects%}
+                    <div class="col-lg-4 col-md-6 mb-50 {{i.category}}" style="position: absolute; left: 0px; top: 0px;">
+                        <a href="{{i.repo_link}}">
                             <div class="project-img noise-dark">
-                                <img class="img-fluid" src="{% static "img/project-03.jpg" %}" alt="">
+                                <img class="img-fluid" src="{{i.image.url}}" alt="">
                             </div>
                         </a>
                         <div class="project-short-info mb-0">
-                            <p>Logo Design 2018.</p>
-                            <a href="project-details.html">
-                                <h4 data-text="Men Clapping">Men Clapping</h4>
+                            <p>{{i.sub_title}}</p>
+                            <a href="{{i.repo_link}}" target="_blank">
+                                <h4 data-text="{{i.title}}">{{i.title}}</h4>
                             </a>
                         </div>
                     </div>
+                    {%endfor%}
                 
                 </div>
             </div>
