@@ -21,7 +21,13 @@ class About(models.Model):
 	dev_to = models.CharField(max_length=1000)
 
 class Project(models.Model):
+	CATEGORY_OF_PROJECT = [
+        ('wd', 'Web Development'),
+        ('ai', 'Artificial Intelligence'),
+        ('da', 'Data Analysis'),
+    ]
 	title = models.CharField(max_length=100)
 	sub_title = models.CharField(max_length=100)
 	repo_link = models.CharField(max_length=500)
+	category = models.CharField(max_length=2,choices=CATEGORY_OF_PROJECT,default= 'wd')
 	image = models.ImageField(upload_to = 'projects')
