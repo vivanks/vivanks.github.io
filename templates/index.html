@@ -464,7 +464,8 @@
                     
                     <div class="col-md-12">
                         <h2 class="section-title">Contact me!</h2>
-                        <form class="contact__form mt-50" method="post" action="#">
+                        <form class="contact__form mt-50" method="post" action="/contact">
+                        {% csrf_token %}
                             <div class="row">
                                 <div class="col">
                                     <p class="contact__msg"></p>
