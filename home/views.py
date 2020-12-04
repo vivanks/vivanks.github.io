@@ -1,6 +1,6 @@
 from django.http import request
 from django.shortcuts import render,redirect
-from .models import Experience, About,Project
+from .models import Experience, About,Project, Blog,Contact
 
 
 
@@ -11,7 +11,7 @@ def index(request):
     exp = list(Experience.objects.all())
     exp.reverse()
     projects = list(Project.objects.all())
-
+    blogs = Blog.objects.all()
     context['title'] = about[0].title
     context['subtitle'] = about[0].subtitle
     context['about'] = about[0].about
@@ -24,6 +24,7 @@ def index(request):
     context['dev_to'] = about[0].dev_to
     context['exp'] = exp
     context['projects'] = projects
+    context['blogs'] = blogs
     
     
     return render(request,'index.html',context)
@@ -31,7 +32,13 @@ def index(request):
 def contact(request):
 
     if request.method=="POST":
-        print(request.POST)
+        message = Contact(
+            message=request.POST.get('message'),
+            name=request.POST.get('name'),
+            email=request.POST.get('email'),
+            subject=request.POST.get('subject')
+        )
+        message.save()
         return redirect('index')
 
     return redirect('index')

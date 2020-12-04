@@ -12,7 +12,7 @@
     <title>Vivank Sharma</title>
     
 	<!--  favicon  -->
-    <link href="{% static "img/logo-dark.png" %}" type="image/png" rel="icon">
+    <link href="{% static "img/logo.png" %}" type="image/png" rel="icon">
 	<!--  main css  -->
     <link href="{% static "css/main.css" %}" rel="stylesheet" type="text/css">
 	<!--  responsive css  -->
@@ -45,7 +45,7 @@
                         <!-- logo -->
                         <div class="logo">
                             <a>
-                                <img class="logo-dark" src="{% static "img/logo-dark.png" %}" alt="nimu">
+                                vivank.dev
                             </a>
                         </div>
                     </div>
@@ -395,55 +395,23 @@
                     </div>
                 </div>
                 <div class="row">
+                    {%for blog in blogs%}
                     <div class="col-lg-4 col-md-6">
                         <div class="blog-item mt-30">
-                            <div class="blog-img">
+                            <div class="blog-img" style="border: 1px solid #ddd;">
                                 <a href="blog-details-text-post.html">
-                                    <img class="img-fluid" src="img/blog-img/blog-img-01.jpg" alt="">
+                                    <img class="img-fluid" src="{{blog.image.url}}" alt="">
                                     <span class="ion-ios-paper-outline"></span>
                                 </a>
                             </div>
                             <div class="blog-item-info">
-                                <a href="#0" class="blog-post-date">25 Dec, 2018</a>
-                                <h4><a href="blog-details-text-post.html">Voluptate molestias quod atque nihil in maiores deleniti fugiat!</a></h4>
-                                <span class="mr-5">by <a href="#0">John</a></span>
-                                <span>in <a href="#0">Text Post</a></span>
+                                <a href="#0" class="blog-post-date">{{blog.date|safe}}</a>
+                                <h4><a href="{{blog.blog_link}}" target="_blank">{{blog.title}}</a></h4>
+                                
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="blog-item mt-30">
-                            <div class="blog-img">
-                                <a href="blog-details-image-post.html">
-                                    <img class="img-fluid" src="img/blog-img/blog-img-02.jpg" alt="">
-                                    <span class="ion-image"></span>
-                                </a>
-                            </div>
-                            <div class="blog-item-info">
-                                <a href="#0" class="blog-post-date">20 Dec, 2018</a>
-                                <h4><a href="blog-details-image-post.html">Nisi expedita sed nemo deleniti officia inventore adipisicing nihil!</a></h4>
-                                <span class="mr-5">by <a href="#0">Jack</a></span>
-                                <span>in <a href="#0">Image Post</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="blog-item mt-30">
-                            <div class="blog-img">
-                                <a href="blog-details-video-post-(youtube).html">
-                                    <img class="img-fluid" src="img/blog-img/blog-img-03.jpg" alt="">
-                                    <span class="ion-ios-videocam-outline"></span>
-                                </a>
-                            </div>
-                            <div class="blog-item-info">
-                                <a href="#0" class="blog-post-date">22 Dec, 2018</a>
-                                <h4><a href="blog-details-video-post-(youtube).html">Provident blanditiis atque porro quisquam alias ad maxime odio!</a></h4>
-                                <span class="mr-5">by <a href="#0">Nabil</a></span>
-                                <span>in <a href="#0">Video Post(YouTube)</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    
+                    {%endfor%}
                 </div>
                 
             </div>

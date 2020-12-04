@@ -37,4 +37,9 @@ class Contact(models.Model):
 	name = models.CharField(max_length=500)
 	email = models.CharField(max_length=500)
 	subject = models.CharField(max_length=500,default="NA")
-	
+
+class Blog(models.Model):
+	title = models.CharField(max_length=100)
+	blog_link = models.CharField(max_length=500)
+	date = models.CharField(max_length=500)
+	image = models.ImageField(upload_to = 'blogs')
