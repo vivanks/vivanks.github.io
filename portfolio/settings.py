@@ -26,7 +26,7 @@ SECRET_KEY = '&f^vmt4=@p7^v0te0n5g%qj__==6g1v_w)43_#-hu%@=0%h^(='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['calm-river-37117.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['vivank-dev.herokuapp.com','127.0.0.1']
 
 
 # Application definition
