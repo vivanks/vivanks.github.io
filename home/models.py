@@ -7,6 +7,7 @@ class Experience(models.Model):
 	period = models.CharField(max_length=100)
 	desc = models.TextField()
 	link = models.CharField(max_length=200)
+	date = models.DateTimeField(auto_now_add=True,null=True)
 
 class About(models.Model):
 	title = models.CharField(max_length=1000)

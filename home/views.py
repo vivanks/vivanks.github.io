@@ -8,7 +8,7 @@ from .models import Experience, About,Project, Blog,Contact
 def index(request):
     context = {}
     about = list(About.objects.all())
-    exp = list(Experience.objects.all())
+    exp = list(Experience.objects.all().order_by('-date'))
     exp.reverse()
     projects = list(Project.objects.all())
     blogs = Blog.objects.all()
