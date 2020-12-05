@@ -14,11 +14,14 @@
 	<!--  favicon  -->
     <link href="{% static "img/logo.png" %}" type="image/png" rel="icon">
 	<!--  main css  -->
-    <link href="{% static "css/main.css" %}" rel="stylesheet" type="text/css">
+    <noscript>
+        <link rel="stylesheet" type="text/css" href="light.css">
+    </noscript>
 	<!--  responsive css  -->
     <link href="{% static "css/responsive.css" %}" rel="stylesheet" type="text/css">
     <!--  Fontawesome css  -->
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
 </head>
 <body id="top">
     
@@ -317,23 +320,7 @@
         </div>
         <!-- end of client-image-wrapper -->
 
-        <!-- begin of promotion-wrapper  -->
-        <div class="promotion-wrapper">
-            <!-- lineAnimationBG -->
-            <div class="lineAnim-bg">
-                <div></div><div></div><div></div><div></div>
-            </div>
-            <div class="container">
-                <div class="row justify-content-center text-center">
-                    <div class="col-lg-6 col-md-8">
-                        <h4>Want to <span>know more</span>?</h4>
-                        <a href="#contact" class="vivank-button">let's talk</a>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end of promotion-wrapper -->
+       
         <!-- begin of projects-wrapper -->
         <div id="projects" class="section-padding projects-wrapper">
             <div class="container">
@@ -517,14 +504,37 @@
         <!--  end of footer  -->
         <!-- begin of scroll-top button -->
         <a href="#top" class="smooth-scroll scroll-top"><span class="ion-chevron-up"></span></a>
+        <a id="mode-toggler" class="dark-mode-toggle"><i class="fas fa-lightbulb"></i></a>
+        
         <!-- end of scroll-top button -->
     </div>
     <!-- end of main-wrapper -->
     <!-- ========  All JS Here ========  -->
+    <script src="{% static "js/darkmode.js" %}"></script>
+    
     <script src="{% static "js/jquery-3.3.1.min.js" %}"></script>
     <script src="{% static "js/plugins.js" %}"></script>
     <script src="{% static "js/main.js" %}"></script>
+    <script>
+        // Plugin Initialization
+        var options = {
+                light: "{% static "css/light.css" %}",
+                dark: "{% static "css/dark.css" %}",
+        }
+        var DarkMode = new DarkMode(options)
 
+        
+        
+        // Function for `mode-toggler` button
+        var ModeToggler = document.getElementById('mode-toggler')
+        
+        ModeToggler.onclick = function() {
+        DarkMode.toggleMode()
+        console.log("dark mode clicked")
+        }
+        
+        
+	</script>
 
 </body>
 </html>
