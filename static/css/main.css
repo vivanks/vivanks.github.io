@@ -1,6 +1,6 @@
 /*==============================================================================
 
- * Template Name: Kuba - Minimal Portfolio Template
+ * Template Name: vivank - Minimal Portfolio Template
  * Description: Responsive HTML5 Template
  * Version: 1.0
 
@@ -203,7 +203,7 @@ li {
     visibility: visible !important;
 }
 
-.Kuba-button {
+.vivank-button {
 	height: 40px;
 	display: inline-block;
 	line-height: 40px;
@@ -220,20 +220,20 @@ li {
 	font-size: 15px;
 }
 
-.Kuba-button.button-dark {
+.vivank-button.button-dark {
 	color: #1a1b1d;
     background-color: #fff;
 }
 
-.Kuba-button:hover {
+.vivank-button:hover {
     color: #fff;
 }
 
-.Kuba-button.button-dark:hover {
+.vivank-button.button-dark:hover {
 	color: #1a1b1d;
 }
 
-.Kuba-button::before {
+.vivank-button::before {
     position: absolute;
     content: "";
     background-color: #1a1b1d;
@@ -254,11 +254,11 @@ li {
     z-index: -1;
 }
 
-.Kuba-button.button-dark::before {
+.vivank-button.button-dark::before {
     background-color: #fff;
 }
 
-.Kuba-button:hover::before {
+.vivank-button:hover::before {
     transform: scaleX(1);
     -webkit-transform: scaleX(1);
     -moz-transform: scaleX(1);
@@ -2038,7 +2038,7 @@ ul.timeline > li:before {
 	color: #777 !important;
 }
 
-.comment_txt .Kuba-button {
+.comment_txt .vivank-button {
 	height: 35px;
 	line-height: 35px;
 	margin-top: 20px;
