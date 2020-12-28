@@ -41,53 +41,7 @@
     <!-- begin of main-wrapper -->
     <div class="main-wrapper">
         <!-- begin of header -->
-        <header>
-            <div class="container">
-                <div class="row">
-                    <div class="col-6">
-                        <!-- logo -->
-                        <div class="logo">
-                            <a>
-                                vivank.dev
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <!-- menu-btn -->
-                        <div class="menu-btn">
-                            <div class="menu-icon" data-text="menu">
-                                <div class="menu-line menu-line-1"></div>
-                                <div class="menu-line menu-line-2"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- end of header -->
-        <!-- begin of menu -->
-        <nav class="full-screen-menu">
-            <!-- lineAnimationBG -->
-            <div class="lineAnim-bg">
-                <div></div><div></div><div></div><div></div>
-            </div>
-            <!-- menu/page-links -->
-            <div class="menu-panel">
-                <ul class="page-links">
-                    <li><a class="active" href="/">Home</a></li>
-                    <li><a href="#services">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#blogs">Blogs</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <!-- menu close button -->
-            <div class="menu-close">
-                <span class="ion-ios-close-empty"></span>
-            </div>
-        </nav>
-        <!-- end of menu -->
+       
         <!-- begin of landing-wrapper -->
         <div class="landing-wrapper">
             <!-- lineAnimationBG -->
@@ -504,7 +458,7 @@
         <!--  end of footer  -->
         <!-- begin of scroll-top button -->
         <a href="#top" class="smooth-scroll scroll-top"><span class="ion-chevron-up"></span></a>
-        <a id="mode-toggler" class="dark-mode-toggle"><i class="fas fa-lightbulb"></i></a>
+        
         
         <!-- end of scroll-top button -->
     </div>
@@ -520,18 +474,12 @@
         var options = {
                 light: "{% static "css/light.css" %}",
                 dark: "{% static "css/dark.css" %}",
+                
+                checkSystemScheme: true,
         }
         var DarkMode = new DarkMode(options)
 
         
-        
-        // Function for `mode-toggler` button
-        var ModeToggler = document.getElementById('mode-toggler')
-        
-        ModeToggler.onclick = function() {
-        DarkMode.toggleMode()
-        console.log("dark mode clicked")
-        }
         
         
 	</script>
